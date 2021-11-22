@@ -12,7 +12,9 @@
 //**************************** Setup *********************************************
 
 void setup() {            // Configura el final salida
-Serial.begin(9600);       
+  
+  Serial.begin(9600);       // set up Serial library at 9600 bps
+  Serial.println("Hello world!"); // prints Hello world! with brake line
 
 }
 
@@ -20,8 +22,7 @@ Serial.begin(9600);
 
 void loop() {              // Inicia el bucle del programa
 
-       Serial.print("Hello world!");  // prints Hello world!
-  delay(1000);
+     //do nothing
 
 }
 
