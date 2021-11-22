@@ -1,6 +1,6 @@
 /*********************************************************************************
 **                                                                              **
-**                              Hello world!                                    **
+**                              Hello World!                                    **
 **                                                                              **
 **                                                                              **
 **    Nom: Pol Careta                                          Data:22/11/21    **
@@ -20,10 +20,9 @@ Serial.begin(9600);
 
 void loop() {              // Inicia el bucle del programa
 
-
-  Serial.println("Hello world!");  
+       Serial.print("Hello world!");  // prints Hello world!
   delay(1000);
-}
 
+}
 
 //************************* Funcions *********************************************
