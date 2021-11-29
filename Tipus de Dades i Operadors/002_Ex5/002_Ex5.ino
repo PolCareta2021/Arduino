@@ -13,13 +13,16 @@ int test = 32767;
 
 void setup() {            // Configura el final salida
   Serial.begin(9600);     //set up Serial library at 9600 bps
-  Serial.print("Test value is: ");
-  Serial.println(test);
+ Serial.println("Lets calculate a hypoteneuse");
 
-  test = test + 1;
- 
-  Serial.print("Now it is: ");
-  Serial.println(test);
+  h = sqrt(a*a + b*b);
+      
+  Serial.print("a = ");
+  Serial.println(a);
+  Serial.print("b = ");
+  Serial.println(b);
+  Serial.print("h = ");
+  Serial.println(h);
 }
 
 //**************************** Loop **********************************************
