@@ -19,11 +19,11 @@ void setup()
   {
     Serial.print("Aigua encara no bull");
   }
-  else if ( tempAigua >= 90 & tempAigua < 100)
+  else if ( tempaigua >= 90 & tempAigua < 100)
   {
     Serial.print("Aigua apunt de bullir");
   }
-  else if (tempAigua == 100)
+  else if (tempaigua == 100)
   {
     Serial.print("Aigua a 100C");
   }
