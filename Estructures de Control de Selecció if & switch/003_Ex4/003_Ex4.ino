@@ -1,56 +1,40 @@
-/*********************************************************************************
-**                                                                              **
-**             Estructura de Control de Selecció if & switch                    **
-**                                                                              **
-**                                                                              **
-**    Nom: Pol Careta                                          Data:03/12/21    **
-*********************************************************************************/
-//*************************** Includes *******************************************
+/**********************************************************************************
+**                                                                               **
+**                          Control Structures                                   **
+**                                                                               **
+**                                                                               **
+**********************************************************************************/
 
-//************************** Variables *******************************************
-int energia = 47;
+//********** Includes *************************************************************
+
+//********** Variables ************************************************************
+int tempaigua = 101;
 
 //********** Setup ****************************************************************
-void setup()               // run once, when the sketch starts
+void setup()              
 {
-  Serial.begin(9600);     // set up Serial library at 9600 bps
-  if (energia >= 43.2)
+  Serial.begin(9600); 
+  
+  if ( tempaigua < 90)
   {
-    Serial.print("G");
-  } 
-  else if (energia >= 38.2 && energia < 43.2)
-  {
-    Serial.print ("F");
+    Serial.print("Aigua encara no bull");
   }
-  else if (energia >= 17.7 && energia < 38.2)
- {
-   Serial.print ("E");
- }
- else if (energia >= 11.1 && energia <17.5)
- {
-   Serial.print ("D");
- }
- else if (energia >= 6.5 && energia < 11.1)
-{
-    Serial.print ("C");
-}
-else if (energia > 3.5 && energia < 6.5)
-
-{
-  Serial.print ("B");
+  else if ( tempAigua >= 90 & tempAigua < 100)
+  {
+    Serial.print("Aigua apunt de bullir");
+  }
+  else if (tempAigua == 100)
+  {
+    Serial.print("Aigua a 100C");
+  }
+  else
+  {
+    Serial.print("Aigua bullint");   
+  }
 }
 
-else 
-
-{
-  Serial.print ("A");
-}
-}
-
-
-    
 //********** Loop *****************************************************************
-void loop()    // we need this to be here even though its empty
+void loop()  
 {
 }
 
