@@ -19,23 +19,23 @@ void setup()
   switch (sensorReading) 
     {
   case 0:    
-    Serial.println("dark");
+    Serial.println("Dark");
     
     break;
   case 1:    
-    Serial.println("dim");
+    Serial.println("Dim");
     
     break;
   case 2:    
-    Serial.println("medium");
+    Serial.println("Medium");
     
     break;
   case 3:
-    Serial.println("bright");
+    Serial.println("Bright");
     
     break;
   default:
-    Serial.println("... I don't know!!!");
+    Serial.println("... I don't know!!");
   } 
 }
 
