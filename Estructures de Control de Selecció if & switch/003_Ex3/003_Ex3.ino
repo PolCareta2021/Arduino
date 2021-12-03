@@ -15,7 +15,7 @@ int tempaigua = 95;
 void setup()              
 {
   Serial.begin(9600); 
-  if (tempAigua < 100)
+  if (tempaigua < 100)
   {
     Serial.print("Aigua encara no bull");
   }
