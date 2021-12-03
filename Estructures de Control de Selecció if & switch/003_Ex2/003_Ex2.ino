@@ -16,7 +16,7 @@ void setup()
 {
   Serial.begin(9600);     
 
-  if (tempAigua > 100)
+  if (tempaigua > 100)
   {
     Serial.print("Aigua supera els 100C, esta bullint!");
   } 
