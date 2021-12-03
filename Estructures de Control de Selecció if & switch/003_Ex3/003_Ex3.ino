@@ -8,22 +8,26 @@
 //*************************** Includes *******************************************
 
 //************************** Variables *******************************************
-int tempaigua = 90;
+int tempaigua = 95;
 
 //********** Setup ****************************************************************
-void setup()               // run once, when the sketch starts
+
+void setup()              
 {
-   Serial.begin(9600);
-if (tempaigua > 100)
- {   
- Serial.println ("Aigua superant els 100 graus!!, esta bullint!!");
- }
-
-
+  Serial.begin(9600); 
+  if (tempAigua < 100)
+  {
+    Serial.print("Aigua encara no bull");
+  }
+  else
+  {
+    Serial.print("Aigua bullint");
+  }
 }
+
     
 //********** Loop *****************************************************************
-void loop()    // we need this to be here even though its empty
+void loop()    
 {
 }
 
