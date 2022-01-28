@@ -1,34 +1,15 @@
-/*********************************************************************************
-**                                                                              **
-**             Estructura de Control de Selecció if & switch                    **
-**                                                                              **
-**                                                                              **
-**    Nom: Pol Careta                                          Data:03/12/21    **
-*********************************************************************************/
-//*************************** Includes *******************************************
+const int analogPin = A0;
+int value;      //variable que almacena la lectura analógica raw
+int position;   //posicion del potenciometro en tanto por ciento
 
-//************************** Variables *******************************************
-int tempaigua = 95;
-
-//********** Setup ****************************************************************
-
-void setup()              
-{
-  Serial.begin(9600); 
-  if (tempaigua < 100)
-  {
-    Serial.print("Aigua encara no bull");
-  }
-  else
-  {
-    Serial.print("Aigua bullint");
-  }
+void setup() {
 }
 
-    
-//********** Loop *****************************************************************
-void loop()    
-{
-}
+void loop() {
+   value = analogRead(analogPin);          // realizar la lectura analógica raw
+   position = map(value, 0, 1023, 0, 100);  // convertir a porcentaje
 
-//********** Funcions *************************************************************
+   //...hacer lo que se quiera, con el valor de posición medido
+
+   delay(1000);
+}
